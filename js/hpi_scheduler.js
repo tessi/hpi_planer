@@ -303,5 +303,44 @@ window.hpi = {
     }
     final_grade = final_grade / final_lp;
     $('#final_grade').text( final_grade.toFixed(2) );
+  },
+  extractJsonFromInput: function(input) {
+    var json = {};
+    if ( input.attr('type') == 'radio' ) {
+      json['active']   = !input.hasClass('hidden');
+      json['selected'] = !!input.is(':checked');
+    } else { // checkbox
+      json['active']   = !!input.is(':checked');
+      json['selected'] = !!input.data('was_checked');
+    }
+    return json;
+  },
+  extractJson: function() {
+    var json = {}, tmp;
+    json['masterprojectgrade'] = hpi.getMasterprojectGrade();
+    json['masterthesisgrade'] = hpi.getMasterthesisGrade();
+    json['rows'] = [];
+    $('#grades > tbody tr').each(function(row_idx, row) {
+      row = $(row);
+      tmp = [
+        $.trim(row.find('td:nth-child( 1)').text()),                    // course name
+        $.trim(row.find('td:nth-child( 2)').text()),                    // semester
+        $.trim(row.find('td:nth-child( 3)').text()),                    // lp
+        hpi.extractJsonFromInput( row.find('td:nth-child( 4) input') ), // itse
+        hpi.extractJsonFromInput( row.find('td:nth-child( 5) input') ), // samt
+        hpi.extractJsonFromInput( row.find('td:nth-child( 6) input') ), // osis
+        hpi.extractJsonFromInput( row.find('td:nth-child( 7) input') ), // ist
+        hpi.extractJsonFromInput( row.find('td:nth-child( 8) input') ), // hct
+        hpi.extractJsonFromInput( row.find('td:nth-child( 9) input') ), // bpet
+        hpi.extractJsonFromInput( row.find('td:nth-child(10) input') ), // sskdt
+        hpi.extractJsonFromInput( row.find('td:nth-child(11) input') ), // sskko
+        hpi.extractJsonFromInput( row.find('td:nth-child(12) input') ), // sskma
+        hpi.extractJsonFromInput( row.find('td:nth-child(13) input') ), // sskre
+        hpi.extractJsonFromInput( row.find('td:nth-child(14) input') ), // ssksk
+        $.trim(row.find('td:nth-child(15)').text())                     // grade
+      ];
+      json.rows.push(tmp);
+    });
+    return json;
   }
 }

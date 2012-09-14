@@ -221,7 +221,7 @@ window.hpi = {
     /* [average_grade, summed_weight, used_lp] */
     return [sum_grade / sum_count, sum_count, sum_lp];
   },
-  getSskLp: function(type) {
+  getSskLp: function(ssktype) {
     var lp = 0;
     $('#grades > tbody tr').each(function(row_idx, row) {
       var points, type;
@@ -229,14 +229,14 @@ window.hpi = {
       points = hpi.getPoints(row);
       type   = hpi.courseType(row);
       if ( points && type) {
-        if ( type == 'ssk' + type )
+        if ( type == 'ssk' + ssktype )
           lp += points;
         row.toggleClass('error', false);
       } else {
         row.toggleClass('error', true);
       }
     });
-    if (type == 'dt')
+    if (ssktype == 'dt')
       return lp > 12 ? 12 : lp;
     return lp > 6 ? 6 : lp;
   },

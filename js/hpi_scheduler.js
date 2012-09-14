@@ -41,10 +41,11 @@ window.hpi = {
     $('#grades > thead').attr('contentEditable', false);
   },
   addAnotherRow: function(text_for_first_row) {
-    $('#grades > tbody').prepend(
-      '<tr><td>' + text_for_first_row +'</td><td></td><td></td>' +
+    var row = $('<tr><td>' + text_for_first_row +'</td><td></td><td></td>' +
       new Array(12).join( '<td><input type="checkbox" /></td>' ) +
       '<td></td></tr>');
+    $('#grades > tbody').prepend(row);
+    return row;
   },
   replaceCheckboxesWithRadioButtons: function() {
     $('#grades > tbody tr').each(function(row_idx, row) {

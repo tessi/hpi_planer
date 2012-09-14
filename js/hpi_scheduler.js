@@ -343,5 +343,44 @@ window.hpi = {
       json.rows.push(tmp);
     });
     return json;
+  },
+  applyJson: function(json) {
+    var row_elem;
+    if ( json.masterprojectgrade ) $('#masterproject_grade').text( json.masterproject_grade );
+    if ( json.masterthesisgrade ) $('#masterthesis_grade').text( json.masterthesis_grade );
+    // delete all existing courses
+    $('#grades > tbody tr').each(function(row_idx, row) {
+      $(row).remove();
+    });
+    // add rows from json
+    if ( json.rows ) for (var i = json.rows.length - 1; i >= 0; i--) {
+      row_elem = hpi.addAnotherRow( json.rows[i][0] );
+      row_elem.find('td:nth-child( 2)').text( json.rows[i][1] );
+      row_elem.find('td:nth-child( 3)').text( json.rows[i][2] );
+      if ( json.rows[i][ 3].active )   row_elem.find('td:nth-child( 4) input').attr('checked', 'checked');
+      if ( json.rows[i][ 3].selected ) row_elem.find('td:nth-child( 4) input').data('was_checked', true);
+      if ( json.rows[i][ 4].active )   row_elem.find('td:nth-child( 5) input').attr('checked', 'checked');
+      if ( json.rows[i][ 4].selected ) row_elem.find('td:nth-child( 5) input').data('was_checked', true);
+      if ( json.rows[i][ 5].active )   row_elem.find('td:nth-child( 6) input').attr('checked', 'checked');
+      if ( json.rows[i][ 5].selected ) row_elem.find('td:nth-child( 6) input').data('was_checked', true);
+      if ( json.rows[i][ 6].active )   row_elem.find('td:nth-child( 7) input').attr('checked', 'checked');
+      if ( json.rows[i][ 6].selected ) row_elem.find('td:nth-child( 7) input').data('was_checked', true);
+      if ( json.rows[i][ 7].active )   row_elem.find('td:nth-child( 8) input').attr('checked', 'checked');
+      if ( json.rows[i][ 7].selected ) row_elem.find('td:nth-child( 8) input').data('was_checked', true);
+      if ( json.rows[i][ 8].active )   row_elem.find('td:nth-child( 9) input').attr('checked', 'checked');
+      if ( json.rows[i][ 8].selected ) row_elem.find('td:nth-child( 9) input').data('was_checked', true);
+      if ( json.rows[i][ 9].active )   row_elem.find('td:nth-child(10) input').attr('checked', 'checked');
+      if ( json.rows[i][ 9].selected ) row_elem.find('td:nth-child(10) input').data('was_checked', true);
+      if ( json.rows[i][10].active )   row_elem.find('td:nth-child(11) input').attr('checked', 'checked');
+      if ( json.rows[i][10].selected ) row_elem.find('td:nth-child(11) input').data('was_checked', true);
+      if ( json.rows[i][11].active )   row_elem.find('td:nth-child(12) input').attr('checked', 'checked');
+      if ( json.rows[i][11].selected ) row_elem.find('td:nth-child(12) input').data('was_checked', true);
+      if ( json.rows[i][12].active )   row_elem.find('td:nth-child(13) input').attr('checked', 'checked');
+      if ( json.rows[i][12].selected ) row_elem.find('td:nth-child(13) input').data('was_checked', true);
+      if ( json.rows[i][13].active )   row_elem.find('td:nth-child(14) input').attr('checked', 'checked');
+      if ( json.rows[i][13].selected ) row_elem.find('td:nth-child(14) input').data('was_checked', true);
+      row_elem.find('td:nth-child( 15)').text( json.rows[i][14] );
+    };
+    if ( !hpi.isEditing() ) hpi.replaceCheckboxesWithRadioButtons();
   }
 }

@@ -319,7 +319,7 @@ window.hpi = {
   extractJson: function() {
     var json = {}, tmp;
     json['masterprojectgrade'] = hpi.getMasterprojectGrade();
-    json['masterthesisgrade'] = hpi.getMasterthesisGrade();
+    json['masterthesisgrade']  = hpi.getMasterthesisGrade();
     json['rows'] = [];
     $('#grades > tbody tr').each(function(row_idx, row) {
       row = $(row);

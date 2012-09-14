@@ -3,6 +3,9 @@ window.hpi = {
     $('#btn-edit-start').click(function(){ hpi.editCourses() });
     $('#btn-edit-confirm').click(function(){ hpi.stopEditingCourses() });
     $('#btn-add-row').click(function(){ hpi.addAnotherRow('einfach hier reinklicken und editieren') });
+    $('table#grades').on('click', 'td input[type=radio]', function () {
+        hpi.fillOverview();
+    });
   },
   showEditButtons: function(mode /* true->default, false */) {
     if ( mode !== false ) mode = true;

@@ -302,6 +302,6 @@ window.hpi = {
       final_lp += vt2_data[1];
     }
     final_grade = final_grade / final_lp;
-    $('#final_grade').text( final_grade );
+    $('#final_grade').text( final_grade.toFixed(2) );
   }
 }

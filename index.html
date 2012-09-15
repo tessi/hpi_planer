@@ -9,7 +9,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
-  <title>HPI Vorlesungs- und Notenplanung</title>
+  <title>HPI Master-Plan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="Philipp Tessenow">
@@ -53,10 +53,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="/index.html#">HPI Planer</a>
+        <a class="brand" href="/index.html#">HPI Master-Plan</a>
+        <span style="display:block; padding: 10px 20px 10px; line-height: 20px;">
+          Kurse planen, Note berechnen für das HPI Masterstudium
+        </span>
         <div class="nav-collapse collapse">
           <ul class="nav">
-            <li><a href="/index.html#about">About / Disclaimer / Impressum</a></li>
+            <!--<li><a href="/index.html#about">About / Disclaimer / Impressum</a></li>-->
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -64,11 +67,40 @@
   </div>
 
   <div class="container">
-    <h1>Vorlesungsplanung und Notensammlung</h1>
+    <br /><br />
     <h3>Übersicht</h3>
-    <p style="float: left;">
-      Eine Beschreibung der ganzen Geschichte..
-    </p>
+    <div style="width: 48%; float: left; text-align: justify;">
+      <p>
+        Mit dem <em>HPI Master-Plan</em> kannst Du deine belegten Vorlesungen und Noten deines
+        <a href="http://hpi-web.de" title="HPI Webseite">HPI Masterstudiums</a>
+        speichern und dabei gleich deine vermutliche Masternote berechnen. <br />
+        Der Planer ist mit bestem Wissen und Gewissen nach der aktuellen Studienordnung geschrieben.
+        Trotzdem kann er das Studienreferat nicht ersetzen.
+      </p>
+      <p>
+        <strong>Disclaimer:</strong> Das hier ist nicht offiziell vom HPI und in keiner Weise rechtlich relevant.
+        Es dient Dir nur zur Orientierung. Alle Deine Daten werden im <em>local storage</em> deines Browsers oder
+        in Deiner Dropbox gespeichert. Sonst schert sich keiner um Deine Daten.
+        Der Code ist unter der
+        <a href="">MIT</a>
+        auf <a href="">github</a> verfügbar.
+      </p>
+      <p>
+        Deine Kursdaten werden automatisch im local sotrage deines Browsers oder in deiner Dropbox gespeichert.
+        Nutze dafür die folgenden Buttons.
+      </p>
+      <div style="margin-bottom: 1em;">
+        <a id="save_to_dropbox"      class="btn">Daten in Deiner Dropbox ablegen</a>
+        <a id="restore_from_dropbox" class="btn" style="float: right;">Daten aus der Dropbox wiederherstellen</a>
+      </div>
+      <p>
+        Rechts findest du eine Notenübersicht und unten die einzelnen Kurse. Klicke auf den Bearbeiten-Button,
+        um Kurse hinzuzufügen oder zu ändern. Alles was beim Bearbeiten gelb eingefärbt ist, kannst du ändern.
+        Wenn du fertig bist, klicke auf den grünen Fertig-Button und die Notenübersicht wird neu berechnet.
+        Im Bearbeiten-Modus klicke die Checkboxen an, mit den für den Kurs verfügbaren Vertiefungsgebieten.
+        Sonst kannst du mit den Radio-Buttons dein gewähltes Vertiefungsgebiet für jeden Kurs auswählen.
+      </p>
+    </div>
     <table id="roundup" class="table table-stripped table-hover" style="float:right; width:50%;">
       <thead>
         <tr>

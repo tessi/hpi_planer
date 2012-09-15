@@ -2,7 +2,7 @@ window.hpi = {
   init: function() {
     $('#btn-edit-start').click(function(){ hpi.editCourses() });
     $('#btn-edit-confirm').click(function(){ hpi.stopEditingCourses() });
-    $('#btn-add-row').click(function(){ hpi.addAnotherRow('einfach hier reinklicken und editieren') });
+    $('#btn-add-row').click(function(){ hpi.addAnotherRow('hier reinklicken und editieren') });
     $('table#grades').on('click', 'td input[type=radio]', function () {
         hpi.saveToLocalStorage();
         hpi.fillOverview();

@@ -260,7 +260,7 @@ window.hpi = {
         bpet_data = hpi.sumupGrades(grades.bpet, 24, 18),
         courses, vt1_data, vt2_data, ssk, sskma, final_grade, final_lp;
     $('#itse_lp').text(itse_data[2]);
-    $('#itse_grade').text(itse_data[0] ? itse_data[0] : '');
+    $('#itse_grade').text(itse_data[0] ? itse_data[0].toFixed(2) : '');
     $('#itse').toggleClass( 'error', itse_data[2] < 24 );
     courses = [['samt',samt_data], ['osis', osis_data], ['ist', ist_data], ['hct', hct_data], ['bpet', bpet_data]];
     courses.sort(function(a,b){
@@ -270,12 +270,12 @@ window.hpi = {
     });
     vt1_data = courses[0][1];
     $('#vt1_lp').text(vt1_data[2]);
-    $('#vt1_grade').text(vt1_data[0] ? vt1_data[0] : '');
+    $('#vt1_grade').text(vt1_data[0] ? vt1_data[0].toFixed(2) : '');
     $('#vt1_weight').text(courses[0][0]);
     $('#vt1').toggleClass( 'error', vt1_data[2] < 24 );
     vt2_data = hpi.sumupGrades(grades[courses[1][0]], 15, 9);
     $('#vt2_lp').text(vt2_data[2]);
-    $('#vt2_grade').text(vt2_data[0] ? vt2_data[0] : '');
+    $('#vt2_grade').text(vt2_data[0] ? vt2_data[0].toFixed(2) : '');
     $('#vt2_weight').text(courses[1][0]);
     $('#vt2').toggleClass( 'error', vt2_data[2] < 15 );
     sskma = hpi.getSskLp('ma');
@@ -350,8 +350,8 @@ window.hpi = {
   },
   applyJson: function(json) {
     var row_elem;
-    if ( json.masterprojectgrade ) $('#masterproject_grade').text( json.masterproject_grade );
-    if ( json.masterthesisgrade ) $('#masterthesis_grade').text( json.masterthesis_grade );
+    if ( json.masterprojectgrade ) $('#masterproject_grade').text( json.masterprojectgrade.toFixed(1) );
+    if ( json.masterthesisgrade ) $('#masterthesis_grade').text( json.masterthesisgrade.toFixed(1) );
     // delete all existing courses
     $('#grades > tbody tr').each(function(row_idx, row) {
       $(row).remove();

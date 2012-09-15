@@ -7,6 +7,23 @@ window.hpi = {
         hpi.saveToLocalStorage();
         hpi.fillOverview();
     });
+    $(function() {
+      $("#grades").tablesorter({headers: {
+         1: { sorter: 'text' },
+         3: { sorter: false },
+         5: { sorter: false },
+         6: { sorter: false },
+         7: { sorter: false },
+         8: { sorter: false },
+         9: { sorter: false },
+        10: { sorter: false },
+        11: { sorter: false },
+        12: { sorter: false },
+        13: { sorter: false },
+        14: { sorter: false },
+        15: { sorter: false },
+      }});
+    });
     hpi.loadFromLocalStorage();
     hpi.fillOverview();
   },
@@ -49,6 +66,7 @@ window.hpi = {
       new Array(12).join( '<td><input type="checkbox" /></td>' ) +
       '<td></td></tr>');
     $('#grades > tbody').prepend(row);
+    $("#grades").trigger("update");
     return row;
   },
   replaceCheckboxesWithRadioButtons: function() {

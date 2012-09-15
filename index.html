@@ -17,6 +17,7 @@
   <!-- Le styles -->
   <link href="/css/bootstrap.css" rel="stylesheet">
   <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="/css/tablesorter.css" rel="stylesheet">
 
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
@@ -88,7 +89,7 @@
             Es dient Dir nur zur Orientierung. Alle Deine Daten werden im <em>local storage</em> deines Browsers oder
             in Deiner Dropbox gespeichert. Sonst schert sich keiner um Deine Daten.
             Der Code ist unter der
-            <a href="">MIT</a>
+            <a href="http://www.opensource.org/licenses/mit-license.php">MIT</a>
             auf <a href="">github</a> verfügbar.
           </p>
           <p>
@@ -195,20 +196,20 @@
             Ich bin fertig mit Eintragen!
           </a>
         </h3>
-        <table id="grades" class="table table-stripped table-hover">
+        <table id="grades" class="table table-stripped table-hover tablesorter">
           <thead>
             <tr>
-              <th rowspan="2">
+              <th rowspan="2" style="min-width: 8em;">
                 Kurs<br />
                 <a id="btn-add-row" class="btn btn-success btn-small hidden" style="position: relative; bottom: -12px;">
                   <i class="icon-plus"></i>
                   neuer Kurs
                 </a>
               </th>
-              <th rowspan="2">Semester</th>
-              <th rowspan="2">Leistungspunkte</th>
+              <th rowspan="2" style="min-width: 5em;">Semester</th>
+              <th rowspan="2" style="min-width: 3em;">LP</th>
               <th colspan="11">Gewähltes Vertiefungsgebiet</th>
-              <th rowspan="2">Note</th>
+              <th rowspan="2" style="min-width: 3em;">Note</th>
             </tr>
             <tr>
               <th>ITSE</th>
@@ -232,7 +233,7 @@
 
   </div> <!-- /container -->
   <script src="/js/jquery-1.8.1.js"></script>
-  <script src="/js/bootstrap.js"></script>
+  <script src="/js/jquery.tablesorter.js"></script>
   <script src="/js/hpi_scheduler.js"></script>
   <script type="text/javascript">
     hpi.init();

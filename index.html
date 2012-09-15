@@ -55,7 +55,7 @@
         </a>
         <a class="brand" href="/index.html#">HPI Master-Plan</a>
         <span style="display:block; padding: 10px 20px 10px; line-height: 20px;">
-          Kurse planen, Note berechnen für das HPI Masterstudium
+          Kurse planen; Note berechnen; für das HPI Masterstudium
         </span>
         <div class="nav-collapse collapse">
           <ul class="nav">
@@ -68,157 +68,167 @@
 
   <div class="container">
     <br /><br />
-    <h3>Übersicht</h3>
-    <div style="width: 48%; float: left; text-align: justify;">
-      <p>
-        Mit dem <em>HPI Master-Plan</em> kannst Du deine belegten Vorlesungen und Noten deines
-        <a href="http://hpi-web.de" title="HPI Webseite">HPI Masterstudiums</a>
-        speichern und dabei gleich deine vermutliche Masternote berechnen. <br />
-        Der Planer ist mit bestem Wissen und Gewissen nach der aktuellen Studienordnung geschrieben.
-        Trotzdem kann er das Studienreferat nicht ersetzen.
-      </p>
-      <p>
-        <strong>Disclaimer:</strong> Das hier ist nicht offiziell vom HPI und in keiner Weise rechtlich relevant.
-        Es dient Dir nur zur Orientierung. Alle Deine Daten werden im <em>local storage</em> deines Browsers oder
-        in Deiner Dropbox gespeichert. Sonst schert sich keiner um Deine Daten.
-        Der Code ist unter der
-        <a href="">MIT</a>
-        auf <a href="">github</a> verfügbar.
-      </p>
-      <p>
-        Deine Kursdaten werden automatisch im local sotrage deines Browsers oder in deiner Dropbox gespeichert.
-        Nutze dafür die folgenden Buttons.
-      </p>
-      <div style="margin-bottom: 1em;">
-        <a id="save_to_dropbox"      class="btn">Daten in Deiner Dropbox ablegen</a>
-        <a id="restore_from_dropbox" class="btn" style="float: right;">Daten aus der Dropbox wiederherstellen</a>
+    <div class="row">
+      <div class="span12">
+        <h3>Übersicht</h3>
       </div>
-      <p>
-        Rechts findest du eine Notenübersicht und unten die einzelnen Kurse. Klicke auf den Bearbeiten-Button,
-        um Kurse hinzuzufügen oder zu ändern. Alles was beim Bearbeiten gelb eingefärbt ist, kannst du ändern.
-        Wenn du fertig bist, klicke auf den grünen Fertig-Button und die Notenübersicht wird neu berechnet.
-        Im Bearbeiten-Modus klicke die Checkboxen an, mit den für den Kurs verfügbaren Vertiefungsgebieten.
-        Sonst kannst du mit den Radio-Buttons dein gewähltes Vertiefungsgebiet für jeden Kurs auswählen.
-      </p>
     </div>
-    <table id="roundup" class="table table-stripped table-hover" style="float:right; width:50%;">
-      <thead>
-        <tr>
-          <th></th>
-          <th>nötige Leistungspunkte</th>
-          <th>geleistete Leistungspunkte</th>
-          <th>Note</th>
-          <th>Gewichtung / Vertiefung</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr id="masterproject">
-          <th>Masterprojekt</th>
-          <td id="masterproject_lp_orig">9</td>
-          <td id="masterproject_lp">9</td>
-          <td id="masterproject_grade">1.0</td>
-          <td>3</td>
-        </tr>
-        <tr id="masterthesis">
-          <th>Masterarbeit</th>
-          <td id="masterthesis_lp_orig">30</td>
-          <td id="masterthesis_lp">-</td>
-          <td id="masterthesis_grade">-</td>
-          <td>3</td>
-        </tr>
-        <tr id="itse">
-          <th>ITSE</th>
-          <td id="itse_lp_orig">24</td>
-          <td id="itse_lp"></td>
-          <td id="itse_grade"></td>
-          <td id="itse_weight"></td>
-        </tr>
-        <tr id="vt1">
-          <th>Vertiefungsgebiet I</th>
-          <td id="vt1_lp_orig">24</td>
-          <td id="vt1_lp"></td>
-          <td id="vt1_grade"></td>
-          <td id="vt1_weight"></td>
-        </tr>
-        <tr id="vt2">
-          <th>Vertiefungsgebiet II</th>
-          <td id="vt2_lp_orig">15</td>
-          <td id="vt2_lp"></td>
-          <td id="vt2_grade"></td>
-          <td id="vt2_weight"></td>
-        </tr>
-        <tr id="sskma">
-          <th>SSKA MA</th>
-          <td id="sskma_lp_orig">6</td>
-          <td id="sskma_lp"></td>
-          <td id="sskma_grade"></td>
-          <td id="sskma_weight"></td>
-        </tr>
-        <tr id="ssk">
-          <th>SSKA Gesamt</th>
-          <td id="ssk_lp_orig">18</td>
-          <td id="ssk_lp"></td>
-          <td id="ssk_grade"></td>
-          <td id="ssk_weight"></td>
-        </tr>
-        <tr>
-          <th>vermutliche Note</th>
-          <td id="final_grade" colspan="4" style="text-align: right; font-weight: bold;"></td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="row">
+      <div class="span6">
+        <div style="text-align: justify;">
+          <p>
+            Mit dem <em>HPI Master-Plan</em> kannst Du deine belegten Vorlesungen und Noten deines
+            <a href="http://hpi-web.de" title="HPI Webseite">HPI Masterstudiums</a>
+            speichern und dabei gleich deine vermutliche Masternote berechnen. <br />
+            Der Planer ist mit bestem Wissen und Gewissen nach der aktuellen Studienordnung geschrieben.
+            Trotzdem kann er das Studienreferat nicht ersetzen.
+          </p>
+          <p>
+            <strong>Disclaimer:</strong> Das hier ist nicht offiziell vom HPI und in keiner Weise rechtlich relevant.
+            Es dient Dir nur zur Orientierung. Alle Deine Daten werden im <em>local storage</em> deines Browsers oder
+            in Deiner Dropbox gespeichert. Sonst schert sich keiner um Deine Daten.
+            Der Code ist unter der
+            <a href="">MIT</a>
+            auf <a href="">github</a> verfügbar.
+          </p>
+          <p>
+            Deine Kursdaten werden automatisch im local sotrage deines Browsers gespeichert.
+            Alternativ landen die Daten mit folgenden Buttons in Deiner Dropbox.
+          </p>
+          <div style="margin-bottom: 1em;">
+            <a id="save_to_dropbox" class="btn" style="margin: 0 8px 0 0;"><i class="icon-upload"></i>
+              In Dropbox speichern
+            </a>
+            <a id="restore_from_dropbox" class="btn" style="margin: 0 8px 0 0;"><i class="icon-download"></i>
+              Aus Dropbox laden
+            </a>
+          </div>
+          <p>
+            Rechts findest du eine Notenübersicht und unten die einzelnen Kurse. Klicke auf den Bearbeiten-Button,
+            um Kurse hinzuzufügen oder zu ändern. Alles was beim Bearbeiten gelb eingefärbt ist, kannst du ändern.
+            Wenn du fertig bist, klicke auf den grünen Fertig-Button und die Notenübersicht wird neu berechnet.
+            Im Bearbeiten-Modus klicke die Checkboxen an, mit den für den Kurs verfügbaren Vertiefungsgebieten.
+            Sonst kannst du mit den Radio-Buttons dein gewähltes Vertiefungsgebiet für jeden Kurs auswählen.
+          </p>
+        </div>
+      </div>
+      <div class="span6">
+        <table id="roundup" class="table table-stripped table-hover">
+          <thead>
+            <tr>
+              <th></th>
+              <th>nötige Leistungspunkte</th>
+              <th>geleistete Leistungspunkte</th>
+              <th>Note</th>
+              <th>Gewichtung / Vertiefung</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="masterproject">
+              <th>Masterprojekt</th>
+              <td id="masterproject_lp_orig">9</td>
+              <td id="masterproject_lp">-</td>
+              <td id="masterproject_grade">-</td>
+              <td>3</td>
+            </tr>
+            <tr id="masterthesis">
+              <th>Masterarbeit</th>
+              <td id="masterthesis_lp_orig">30</td>
+              <td id="masterthesis_lp">-</td>
+              <td id="masterthesis_grade">-</td>
+              <td>3</td>
+            </tr>
+            <tr id="itse">
+              <th>ITSE</th>
+              <td id="itse_lp_orig">24</td>
+              <td id="itse_lp"></td>
+              <td id="itse_grade"></td>
+              <td id="itse_weight"></td>
+            </tr>
+            <tr id="vt1">
+              <th>Vertiefungsgebiet I</th>
+              <td id="vt1_lp_orig">24</td>
+              <td id="vt1_lp"></td>
+              <td id="vt1_grade"></td>
+              <td id="vt1_weight"></td>
+            </tr>
+            <tr id="vt2">
+              <th>Vertiefungsgebiet II</th>
+              <td id="vt2_lp_orig">15</td>
+              <td id="vt2_lp"></td>
+              <td id="vt2_grade"></td>
+              <td id="vt2_weight"></td>
+            </tr>
+            <tr id="sskma">
+              <th>SSKA MA</th>
+              <td id="sskma_lp_orig">6</td>
+              <td id="sskma_lp"></td>
+              <td id="sskma_grade"></td>
+              <td id="sskma_weight"></td>
+            </tr>
+            <tr id="ssk">
+              <th>SSKA Gesamt</th>
+              <td id="ssk_lp_orig">18</td>
+              <td id="ssk_lp"></td>
+              <td id="ssk_grade"></td>
+              <td id="ssk_weight"></td>
+            </tr>
+            <tr>
+              <th>vermutliche Note</th>
+              <td id="final_grade" colspan="4" style="text-align: right; font-weight: bold;"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
     <div style="clear: both;"></div>
-    <h3>
-      Vorlesungen und Seminare
-      <a id="btn-edit-start" class="table-head-controls btn" title="Kurse hinzufügen, entfernen, ändern usw.">Bearbeiten</a>
-      <a id="btn-edit-confirm" class="table-head-controls btn btn-success hidden" title="Alle Änderungen werden übernommen.">Ich bin fertig mit Eintragen!</a>
-    </h3>
-    <table id="grades" class="table table-stripped table-hover">
-      <thead>
-        <tr>
-          <th rowspan="2">
-            Kurs<br />
-            <a id="btn-add-row" class="btn btn-success btn-small hidden" style="position: relative; bottom: -12px;">neuer Kurs</a>
-          </th>
-          <th rowspan="2">Semester</th>
-          <th rowspan="2">Leistungspunkte</th>
-          <th colspan="11">Gewähltes Vertiefungsgebiet</th>
-          <th rowspan="2">Note</th>
-        </tr>
-        <tr>
-          <th>ITSE</th>
-          <th>SAMT</th>
-          <th>OSIS</th>
-          <th>IST</th>
-          <th>HCT</th>
-          <th>BPET</th>
-          <th>SSK-DT</th>
-          <th>SSK-KO</th>
-          <th>SSK-MA</th>
-          <th>SSK-RE</th>
-          <th>SSK-SK</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Advanced Modularity</td>
-          <td>SS12</td>
-          <td>3</td>
-          <td><input type="radio" /></td>
-          <td><input type="radio" checked="checked" /></td>
-          <td><input type="radio" class="hidden" /></td>
-          <td><input type="radio" class="hidden" /></td>
-          <td><input type="radio" class="hidden" /></td>
-          <td><input type="radio" class="hidden" /></td>
-          <td><input type="radio" class="hidden" /></td>
-          <td><input type="radio" class="hidden" /></td>
-          <td><input type="radio" class="hidden" /></td>
-          <td><input type="radio" class="hidden" /></td>
-          <td><input type="radio" class="hidden" /></td>
-          <td>1.0</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="row">
+      <div class="span12">
+        <h3>
+          Vorlesungen und Seminare
+          <a id="btn-edit-start" class="table-head-controls btn" title="Kurse hinzufügen, entfernen, ändern usw.">
+            <i class="icon-edit"></i>
+            Bearbeiten
+          </a>
+          <a id="btn-edit-confirm" class="table-head-controls btn btn-success hidden" title="Alle Änderungen werden übernommen.">
+            <i class="icon-ok"></i>
+            Ich bin fertig mit Eintragen!
+          </a>
+        </h3>
+        <table id="grades" class="table table-stripped table-hover">
+          <thead>
+            <tr>
+              <th rowspan="2">
+                Kurs<br />
+                <a id="btn-add-row" class="btn btn-success btn-small hidden" style="position: relative; bottom: -12px;">
+                  <i class="icon-plus"></i>
+                  neuer Kurs
+                </a>
+              </th>
+              <th rowspan="2">Semester</th>
+              <th rowspan="2">Leistungspunkte</th>
+              <th colspan="11">Gewähltes Vertiefungsgebiet</th>
+              <th rowspan="2">Note</th>
+            </tr>
+            <tr>
+              <th>ITSE</th>
+              <th>SAMT</th>
+              <th>OSIS</th>
+              <th>IST</th>
+              <th>HCT</th>
+              <th>BPET</th>
+              <th>SSK-DT</th>
+              <th>SSK-KO</th>
+              <th>SSK-MA</th>
+              <th>SSK-RE</th>
+              <th>SSK-SK</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
   </div> <!-- /container -->
   <script src="/js/jquery-1.8.1.js"></script>

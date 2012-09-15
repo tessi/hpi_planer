@@ -43,11 +43,13 @@ window.hpi = {
     hpi.showEditButtons();
     hpi.enableEditingContent();
     hpi.replaceRadioButtonsWithCheckboxes();
+    hpi.addRemoveRowButtons();
   },
   stopEditingCourses: function() {
     $.each([$('table#grades > tbody'), $('#masterproject_grade'), $('#masterthesis_grade')], function(idx, element) {
       element.toggleClass('editing', false);
     });
+    hpi.removeRemoveRowButtons();
     hpi.showEditButtons(false);
     hpi.enableEditingContent(false);
     hpi.replaceCheckboxesWithRadioButtons();
@@ -60,6 +62,16 @@ window.hpi = {
       element.attr('contentEditable', mode);
     });
     $('#grades > thead').attr('contentEditable', false);
+  },
+  addRemoveRowButtons: function() {
+    var button = $('<a class="btn btn-mini row_remove_button" style="float:right;" title="Kurs löschen"><i class="icon-remove"></i></a>');
+    $('table#grades tbody tr td:first-child').append(button);
+    $('table#grades tbody tr td a.row_remove_button').click(function() {
+      $(this).parents('tr').remove();
+    });
+  },
+  removeRemoveRowButtons: function() {
+    $('table#grades tbody tr td a.row_remove_button').remove();
   },
   addAnotherRow: function(text_for_first_row) {
     var row = $('<tr><td>' + text_for_first_row +'</td><td></td><td></td>' +

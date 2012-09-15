@@ -4,8 +4,11 @@ window.hpi = {
     $('#btn-edit-confirm').click(function(){ hpi.stopEditingCourses() });
     $('#btn-add-row').click(function(){ hpi.addAnotherRow('einfach hier reinklicken und editieren') });
     $('table#grades').on('click', 'td input[type=radio]', function () {
+        hpi.saveToLocalStorage();
         hpi.fillOverview();
     });
+    hpi.loadFromLocalStorage();
+    hpi.fillOverview();
   },
   showEditButtons: function(mode /* true->default, false */) {
     if ( mode !== false ) mode = true;
@@ -31,6 +34,7 @@ window.hpi = {
     hpi.showEditButtons(false);
     hpi.enableEditingContent(false);
     hpi.replaceCheckboxesWithRadioButtons();
+    hpi.saveToLocalStorage();
     hpi.fillOverview();
   },
   enableEditingContent: function(mode /* true->default, false*/) {
@@ -382,5 +386,13 @@ window.hpi = {
       row_elem.find('td:nth-child( 15)').text( json.rows[i][14] );
     };
     if ( !hpi.isEditing() ) hpi.replaceCheckboxesWithRadioButtons();
+  },
+  saveToLocalStorage: function() {
+    var json = hpi.extractJson();
+    localStorage.setItem('course_data', JSON.stringify(json));
+  },
+  loadFromLocalStorage: function() {
+    var json = JSON.parse(localStorage.getItem('course_data'));
+    if (json) hpi.applyJson(json);
   }
 }

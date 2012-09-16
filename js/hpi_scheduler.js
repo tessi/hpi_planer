@@ -7,22 +7,37 @@ window.hpi = {
         hpi.saveToLocalStorage();
         hpi.fillOverview();
     });
+    $('#download_data').click(function() {
+      var blob = new Blob([ JSON.stringify(hpi.extractJson()) ], {'type':'application\/octet-stream'}),
+          button = $(this);
+      button.attr('href', URL.createObjectURL(blob));
+      button.attr('download', 'hpi_masterplan.json');
+    });
+    $('#restore_data').click(function() {
+      var button = $(this),
+          fileList = $('#file_to_restore')[0].files,
+          file, reader;
+      $('#file_upload_info').toggleClass('hidden', fileList.length > 0);
+      if ( fileList.length = 0 ) return;
+      file = fileList[0];
+      reader = new FileReader();
+      reader.onload = function(evt) {
+        var json = JSON.parse( evt.target.result );
+        if (json) {
+          hpi.applyJson(json);
+          hpi.saveToLocalStorage();
+        }
+      };
+      reader.readAsText(file);
+    });
     $(function() {
-      $("#grades").tablesorter({headers: {
+      var options = { headers: {
          1: { sorter: 'text' },
-         3: { sorter: false },
-         5: { sorter: false },
-         6: { sorter: false },
-         7: { sorter: false },
-         8: { sorter: false },
-         9: { sorter: false },
-        10: { sorter: false },
-        11: { sorter: false },
-        12: { sorter: false },
-        13: { sorter: false },
-        14: { sorter: false },
-        15: { sorter: false },
-      }});
+         3: { sorter: false }}};
+      for (var i = 5; i <= 15; i++) {
+        options.headers[i] = { sorter: false };
+      }
+      $("#grades").tablesorter(options);
     });
     hpi.loadFromLocalStorage();
     hpi.fillOverview();

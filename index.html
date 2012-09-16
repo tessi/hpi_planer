@@ -86,24 +86,27 @@
           </p>
           <p>
             <strong>Disclaimer:</strong> Das hier ist nicht offiziell vom HPI und in keiner Weise rechtlich relevant.
-            Es dient Dir nur zur Orientierung. Alle Deine Daten werden im <em>local storage</em> deines Browsers oder
-            in Deiner Dropbox gespeichert. Sonst schert sich keiner um Deine Daten.
+            Es dient Dir nur zur Orientierung. Alle Deine Daten werden automatisch im <em>local storage</em> deines Browsers gespeichert. Du kannst Dir die Daten aber auch runterladen.
             Der Code ist unter der
-            <a href="http://www.opensource.org/licenses/mit-license.php">MIT</a>
+            <a href="http://www.opensource.org/licenses/mit-license.php">MIT Lizenz</a>
             auf <a href="">github</a> verfügbar.
           </p>
           <p>
-            Deine Kursdaten werden automatisch im local sotrage deines Browsers gespeichert.
-            Alternativ landen die Daten mit folgenden Buttons in Deiner Dropbox.
+            Du kannst Deine Daten mit folgenden Buttons runterladen und wiederherstellen.
           </p>
-          <div style="margin-bottom: 1em;">
-            <a id="save_to_dropbox" class="btn" style="margin: 0 8px 0 0;"><i class="icon-upload"></i>
-              In Dropbox speichern
+          <div id="file_upload_info" class="label-warning hidden" style="margin: 5px; padding: 2px;">
+            Wähle erst die Datei zum wiederherstellen aus, bevor Du versuchst die Daten zu laden.
+          </div>
+          <div style="margin-bottom: 1em; text-align: left;">
+            <a id="download_data" class="btn dragout" style="margin: 0 8px 0 0;" draggable="true" ><i class="icon-download"></i>
+              Daten speichern
             </a>
-            <a id="restore_from_dropbox" class="btn" style="margin: 0 8px 0 0;"><i class="icon-download"></i>
-              Aus Dropbox laden
+            <input type="file" id="file_to_restore" style="width: 14em; margin-left: 5em;" />
+            <a id="restore_data" class="btn" style="margin: 0 8px 0 0;"><i class="icon-upload"></i>
+              Daten laden
             </a>
           </div>
+          <div style="clear: both;"></div>
           <p>
             Rechts findest du eine Notenübersicht und unten die einzelnen Kurse. Klicke auf den Bearbeiten-Button,
             um Kurse hinzuzufügen oder zu ändern. Alles was beim Bearbeiten gelb eingefärbt ist, kannst du ändern.
@@ -117,7 +120,7 @@
         <table id="roundup" class="table table-stripped table-hover">
           <thead>
             <tr>
-              <th></th>
+              <th style="min-width: 10em;"></th>
               <th>nötige Leistungspunkte</th>
               <th>geleistete Leistungspunkte</th>
               <th>Note</th>

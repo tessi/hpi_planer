@@ -105,6 +105,7 @@
       hpi.showEditButtons(false);
       hpi.enableEditingContent(false);
       hpi.replaceCheckboxesWithRadioButtons();
+      $("#grades").trigger("update");
       hpi.saveToLocalStorage();
       return hpi.fillOverview();
     },
@@ -132,7 +133,6 @@
       var row;
       row = $("<tr><td>" + text_for_first_row + "</td><td></td><td></td>" + new Array(12).join("<td><input type=\"checkbox\" /></td>") + "<td></td></tr>");
       $("#grades > tbody").prepend(row);
-      $("#grades").trigger("update");
       return row;
     },
     replaceCheckboxesWithRadioButtons: function() {

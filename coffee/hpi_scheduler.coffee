@@ -57,6 +57,7 @@ window.hpi =
     hpi.showEditButtons no
     hpi.enableEditingContent no
     hpi.replaceCheckboxesWithRadioButtons()
+    $("#grades").trigger "update"
     hpi.saveToLocalStorage()
     hpi.fillOverview()
 
@@ -78,7 +79,6 @@ window.hpi =
   addAnotherRow: (text_for_first_row) ->
     row = $("<tr><td>" + text_for_first_row + "</td><td></td><td></td>" + new Array(12).join("<td><input type=\"checkbox\" /></td>") + "<td></td></tr>")
     $("#grades > tbody").prepend row
-    $("#grades").trigger "update"
     row
 
   replaceCheckboxesWithRadioButtons: ->

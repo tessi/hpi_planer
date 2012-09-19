@@ -437,8 +437,9 @@
         }
       }
       if (!hpi.isEditing()) {
-        return hpi.replaceCheckboxesWithRadioButtons();
+        hpi.replaceCheckboxesWithRadioButtons();
       }
+      return hpi.fillOverview();
     },
     saveToLocalStorage: function() {
       var json;

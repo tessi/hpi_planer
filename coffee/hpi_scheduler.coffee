@@ -298,6 +298,7 @@ window.hpi =
           row_elem.find("td:nth-child( #{j + 1}) input").data "was_checked", true  if json.rows[i][j].selected
         i--
     hpi.replaceCheckboxesWithRadioButtons() unless hpi.isEditing()
+    hpi.fillOverview()
 
   saveToLocalStorage: ->
     json = hpi.extractJson()

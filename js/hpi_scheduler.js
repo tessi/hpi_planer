@@ -10,7 +10,9 @@
         return hpi.stopEditingCourses();
       });
       $("#btn-add-row").click(function() {
-        return hpi.addAnotherRow("hier reinklicken und editieren");
+        var row;
+        row = hpi.addAnotherRow("hier reinklicken und editieren");
+        return hpi.selectContentOf(row.children("td:first-child"));
       });
       $("table#grades").on("click", "td input[type=radio]", function() {
         hpi.saveToLocalStorage();
@@ -134,6 +136,14 @@
       row = $("<tr><td>" + text_for_first_row + "</td><td></td><td></td>" + new Array(12).join("<td><input type=\"checkbox\" /></td>") + "<td></td></tr>");
       $("#grades > tbody").prepend(row);
       return row;
+    },
+    selectContentOf: function(el) {
+      var range, sel;
+      range = document.createRange();
+      range.selectNodeContents(el[0]);
+      sel = window.getSelection();
+      sel.removeAllRanges();
+      return sel.addRange(range);
     },
     replaceCheckboxesWithRadioButtons: function() {
       return $("#grades > tbody tr").each(function(row_idx, row) {

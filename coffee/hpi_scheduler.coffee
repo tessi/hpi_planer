@@ -5,7 +5,8 @@ window.hpi =
     $("#btn-edit-confirm").click ->
       hpi.stopEditingCourses()
     $("#btn-add-row").click ->
-      hpi.addAnotherRow "hier reinklicken und editieren"
+      row = hpi.addAnotherRow "hier reinklicken und editieren"
+      hpi.selectContentOf row.children("td:first-child")
     $("table#grades").on "click", "td input[type=radio]", ->
       hpi.saveToLocalStorage()
       hpi.fillOverview()
@@ -80,6 +81,13 @@ window.hpi =
     row = $("<tr><td>" + text_for_first_row + "</td><td></td><td></td>" + new Array(12).join("<td><input type=\"checkbox\" /></td>") + "<td></td></tr>")
     $("#grades > tbody").prepend row
     row
+
+  selectContentOf: (el) ->
+    range = document.createRange()
+    range.selectNodeContents el[0]
+    sel = window.getSelection()
+    sel.removeAllRanges()
+    sel.addRange(range)
 
   replaceCheckboxesWithRadioButtons: ->
     $("#grades > tbody tr").each (row_idx, row) ->

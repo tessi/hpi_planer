@@ -48,6 +48,25 @@
         return reader.readAsText(file);
       });
       hpi.editables = [$("#grades > tbody"), $("#masterproject_grade"), $("#masterthesis_grade")];
+      $('#grades').on('click', '.editing td', function(event) {
+        var checkbox, target;
+        target = $(event.target);
+        if (target.parent('.editing')) {
+          checkbox = target.children('input[type=checkbox]');
+          if (checkbox.length > 0) {
+            return checkbox.attr('checked', !checkbox.attr('checked'));
+          } else {
+            return hpi.selectContentOf(target);
+          }
+        }
+      });
+      $('#masterproject, #masterthesis').on('click', function(event) {
+        var target;
+        target = $(event.target);
+        if (target.is('.editing')) {
+          return hpi.selectContentOf(target);
+        }
+      });
       $(function() {
         var i, options, _i;
         options = {
@@ -118,7 +137,11 @@
       $.each([$("#grades"), $("#masterproject_grade"), $("#masterthesis_grade")], function(idx, element) {
         return element.attr("contentEditable", mode);
       });
-      return $("#grades > thead").attr("contentEditable", false);
+      $("#grades > thead").attr("contentEditable", false);
+      $.each($("#grades td input"), function(idx, element) {
+        return $(element).parent('td').attr("contentEditable", false);
+      });
+      return $.each($("#grades td .row_remove_button").attr("contentEditable", false));
     },
     addRemoveRowButtons: function() {
       var button;
@@ -140,7 +163,7 @@
     selectContentOf: function(el) {
       var range, sel;
       range = document.createRange();
-      range.selectNodeContents(el[0]);
+      range.selectNode(el[0].childNodes[0]);
       sel = window.getSelection();
       sel.removeAllRanges();
       return sel.addRange(range);

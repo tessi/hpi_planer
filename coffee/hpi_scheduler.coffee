@@ -31,6 +31,22 @@ window.hpi =
 
     hpi.editables = [$("#grades > tbody"), $("#masterproject_grade"), $("#masterthesis_grade")]
 
+    # in editing mode:
+    # when clicking on a text-cell: select text. when clicking on a checkbox-cell toggle checkbox
+    $('#grades').on 'click', '.editing td', (event) ->
+      target = $(event.target)
+      if target.parent('.editing')
+        checkbox = target.children('input[type=checkbox]')
+        if checkbox.length > 0
+          checkbox.attr 'checked', not checkbox.attr 'checked'
+        else
+          hpi.selectContentOf target
+
+    # when clicking on a master(project|thesis) grade, sleect all the text
+    $('#masterproject, #masterthesis').on 'click', (event) ->
+      target = $(event.target)
+      hpi.selectContentOf target if target.is('.editing')
+
     $ ->
       options = headers:
         1: { sorter: "text" }
@@ -67,6 +83,9 @@ window.hpi =
     $.each [$("#grades"), $("#masterproject_grade"), $("#masterthesis_grade")], (idx, element) ->
       element.attr "contentEditable", mode
     $("#grades > thead").attr "contentEditable", off
+    $.each $("#grades td input"), (idx, element) ->
+      $(element).parent('td').attr "contentEditable", off
+    $.each $("#grades td .row_remove_button").attr "contentEditable", off
 
   addRemoveRowButtons: ->
     button = $("<a class=\"btn btn-mini row_remove_button\" style=\"float:right;\" title=\"Kurs löschen\"><i class=\"icon-remove\"></i></a>")
@@ -84,7 +103,7 @@ window.hpi =
 
   selectContentOf: (el) ->
     range = document.createRange()
-    range.selectNodeContents el[0]
+    range.selectNode el[0].childNodes[0]
     sel = window.getSelection()
     sel.removeAllRanges()
     sel.addRange(range)

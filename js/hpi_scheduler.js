@@ -47,6 +47,7 @@
         };
         return reader.readAsText(file);
       });
+      hpi.initKeyboardShortcuts();
       hpi.editables = [$("#grades > tbody"), $("#masterproject_grade"), $("#masterthesis_grade")];
       $('#grades').on('click', '.editing td', function(event) {
         var checkbox, target;
@@ -88,6 +89,16 @@
       });
       hpi.loadFromLocalStorage();
       return hpi.fillOverview();
+    },
+    initKeyboardShortcuts: function() {
+      return $(window).on('keyup', function(event) {
+        switch (event.keyCode) {
+          case 27:
+            if (hpi.isEditing()) {
+              return hpi.stopEditingCourses();
+            }
+        }
+      });
     },
     showEditButtons: function(mode) {
       var btn, _i, _len, _ref, _results;

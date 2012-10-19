@@ -28,6 +28,7 @@ window.hpi =
           hpi.applyJson json
           hpi.saveToLocalStorage()
       reader.readAsText file
+    hpi.initKeyboardShortcuts()
 
     hpi.editables = [$("#grades > tbody"), $("#masterproject_grade"), $("#masterthesis_grade")]
 
@@ -55,6 +56,13 @@ window.hpi =
       $("#grades").tablesorter options
     hpi.loadFromLocalStorage()
     hpi.fillOverview()
+
+  initKeyboardShortcuts: ->
+    $(window).on 'keyup', (event) ->
+      switch event.keyCode
+        when 27 #escapeKey
+          hpi.stopEditingCourses() if hpi.isEditing()
+
 
   showEditButtons: (mode) -> # true->default, false
     mode = true  if mode isnt false

@@ -10,9 +10,7 @@
         return hpi.stopEditingCourses();
       });
       $("#btn-add-row").click(function() {
-        var row;
-        row = hpi.addAnotherRow("hier reinklicken und editieren");
-        return hpi.selectContentOf(row.children("td:first-child"));
+        return hpi.newCourse();
       });
       $("table#grades").on("click", "td input[type=radio]", function() {
         hpi.saveToLocalStorage();
@@ -91,24 +89,53 @@
       return hpi.fillOverview();
     },
     initKeyboardShortcuts: function() {
-      return $(window).on('keyup', function(event) {
+      var keyHandler, str, _i, _len, _ref, _results;
+      keyHandler = function(event) {
+        var triggered;
         switch (event.keyCode) {
           case 27:
             if (hpi.isEditing()) {
-              return hpi.stopEditingCourses();
+              hpi.stopEditingCourses();
+              triggered = true;
             }
             break;
           case 66:
-            if (event.ctrlKey && !hpi.isEditing()) {
-              return hpi.editCourses();
+            if (!hpi.isEditing()) {
+              if (event.ctrlKey) {
+                hpi.editCourses();
+                triggered = true;
+              }
             } else {
-              return hpi.stopEditingCourses();
+              if (event.ctrlKey) {
+                hpi.stopEditingCourses();
+                triggered = true;
+              }
             }
             break;
-          default:
-            return console.log(event.keyCode);
+          case 75:
+            if (event.ctrlKey && hpi.isEditing()) {
+              hpi.newCourse();
+              triggered = true;
+            }
         }
-      });
+        if (triggered) {
+          event.preventDefault();
+          event.stopPropagation();
+          return event.stopImmediatePropagation();
+        }
+      };
+      _ref = ['keydown'];
+      _results = [];
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        str = _ref[_i];
+        _results.push($(window).on(str, keyHandler));
+      }
+      return _results;
+    },
+    newCourse: function() {
+      var row;
+      row = hpi.addAnotherRow("hier reinklicken und editieren");
+      return hpi.selectContentOf(row.children("td:first-child"));
     },
     showEditButtons: function(mode) {
       var btn, _i, _len, _ref, _results;

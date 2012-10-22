@@ -5,8 +5,7 @@ window.hpi =
     $("#btn-edit-confirm").click ->
       hpi.stopEditingCourses()
     $("#btn-add-row").click ->
-      row = hpi.addAnotherRow "hier reinklicken und editieren"
-      hpi.selectContentOf row.children("td:first-child")
+      hpi.newCourse()
     $("table#grades").on "click", "td input[type=radio]", ->
       hpi.saveToLocalStorage()
       hpi.fillOverview()
@@ -58,18 +57,35 @@ window.hpi =
     hpi.fillOverview()
 
   initKeyboardShortcuts: ->
-    $(window).on 'keyup', (event) ->
+    keyHandler = (event) ->
       switch event.keyCode
         when 27 #escapeKey
-          hpi.stopEditingCourses() if hpi.isEditing()
-        when 66 # b-Key
-          if event.ctrlKey and not hpi.isEditing()
-            hpi.editCourses()
-          else
+          if hpi.isEditing()
             hpi.stopEditingCourses()
-        else
-          console.log event.keyCode
+            triggered = true
+        when 66 # b-Key
+          if not hpi.isEditing()
+            if event.ctrlKey
+              hpi.editCourses()
+              triggered = true
+          else
+            if event.ctrlKey
+              hpi.stopEditingCourses()
+              triggered = true
+        when 75 # k-Key
+          if event.ctrlKey and hpi.isEditing()
+            hpi.newCourse()
+            triggered = true
+      if triggered
+        event.preventDefault()
+        event.stopPropagation()
+        event.stopImmediatePropagation()
 
+    $(window).on str, keyHandler for str in ['keydown']
+
+  newCourse: ->
+    row = hpi.addAnotherRow "hier reinklicken und editieren"
+    hpi.selectContentOf row.children("td:first-child")
 
   showEditButtons: (mode) -> # true->default, false
     mode = true  if mode isnt false

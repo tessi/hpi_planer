@@ -95,9 +95,19 @@ window.hpi =
   editCourses: ->
     element.toggleClass "editing", on for element in hpi.editables
     hpi.showEditButtons()
+    hpi.addRemoveRowButtons()
     hpi.enableEditingContent()
     hpi.replaceRadioButtonsWithCheckboxes()
-    hpi.addRemoveRowButtons()
+    # put cursor in first cell of the table
+    cell = $ '#grades td:first'
+    range = document.createRange()
+    if cell[0].childNodes[0].TEXT_NODE isnt cell[0].childNodes[0].nodeType
+      hpi.selectContentOf cell
+    range.setStartBefore cell[0].childNodes[0]
+    range.setEndBefore cell[0].childNodes[0]
+    sel = window.getSelection()
+    sel.removeAllRanges()
+    sel.addRange(range)
 
   stopEditingCourses: ->
     element.toggleClass "editing", off for element in hpi.editables
@@ -116,7 +126,7 @@ window.hpi =
     $("#grades > thead").attr "contentEditable", off
     $.each $("#grades td input"), (idx, element) ->
       $(element).parent('td').attr "contentEditable", off
-    $.each $("#grades td .row_remove_button").attr "contentEditable", off
+    $("#grades td .row_remove_button").attr "contentEditable", off
 
   addRemoveRowButtons: ->
     button = $("<a class=\"btn btn-mini row_remove_button\" style=\"float:right;\" title=\"Kurs löschen\"><i class=\"icon-remove\"></i></a>")

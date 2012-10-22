@@ -152,16 +152,26 @@
       return _results;
     },
     editCourses: function() {
-      var element, _i, _len, _ref;
+      var cell, element, range, sel, _i, _len, _ref;
       _ref = hpi.editables;
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         element = _ref[_i];
         element.toggleClass("editing", true);
       }
       hpi.showEditButtons();
+      hpi.addRemoveRowButtons();
       hpi.enableEditingContent();
       hpi.replaceRadioButtonsWithCheckboxes();
-      return hpi.addRemoveRowButtons();
+      cell = $('#grades td:first');
+      range = document.createRange();
+      if (cell[0].childNodes[0].TEXT_NODE !== cell[0].childNodes[0].nodeType) {
+        hpi.selectContentOf(cell);
+      }
+      range.setStartBefore(cell[0].childNodes[0]);
+      range.setEndBefore(cell[0].childNodes[0]);
+      sel = window.getSelection();
+      sel.removeAllRanges();
+      return sel.addRange(range);
     },
     stopEditingCourses: function() {
       var element, _i, _len, _ref;
@@ -189,7 +199,7 @@
       $.each($("#grades td input"), function(idx, element) {
         return $(element).parent('td').attr("contentEditable", false);
       });
-      return $.each($("#grades td .row_remove_button").attr("contentEditable", false));
+      return $("#grades td .row_remove_button").attr("contentEditable", false);
     },
     addRemoveRowButtons: function() {
       var button;

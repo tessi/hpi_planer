@@ -97,6 +97,16 @@
             if (hpi.isEditing()) {
               return hpi.stopEditingCourses();
             }
+            break;
+          case 66:
+            if (event.ctrlKey && !hpi.isEditing()) {
+              return hpi.editCourses();
+            } else {
+              return hpi.stopEditingCourses();
+            }
+            break;
+          default:
+            return console.log(event.keyCode);
         }
       });
     },

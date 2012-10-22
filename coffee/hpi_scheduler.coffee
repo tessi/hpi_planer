@@ -62,6 +62,13 @@ window.hpi =
       switch event.keyCode
         when 27 #escapeKey
           hpi.stopEditingCourses() if hpi.isEditing()
+        when 66 # b-Key
+          if event.ctrlKey and not hpi.isEditing()
+            hpi.editCourses()
+          else
+            hpi.stopEditingCourses()
+        else
+          console.log event.keyCode
 
 
   showEditButtons: (mode) -> # true->default, false

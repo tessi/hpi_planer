@@ -89,48 +89,23 @@
       return hpi.fillOverview();
     },
     initKeyboardShortcuts: function() {
-      var keyHandler, str, _i, _len, _ref, _results;
-      keyHandler = function(event) {
-        var triggered;
-        switch (event.keyCode) {
-          case 27:
-            if (hpi.isEditing()) {
-              hpi.stopEditingCourses();
-              triggered = true;
-            }
-            break;
-          case 66:
-            if (!hpi.isEditing()) {
-              if (event.ctrlKey) {
-                hpi.editCourses();
-                triggered = true;
-              }
-            } else {
-              if (event.ctrlKey) {
-                hpi.stopEditingCourses();
-                triggered = true;
-              }
-            }
-            break;
-          case 75:
-            if (event.ctrlKey && hpi.isEditing()) {
-              hpi.newCourse();
-              triggered = true;
-            }
+      $(document).bind('keydown.esc', function() {
+        if (hpi.isEditing()) {
+          return hpi.stopEditingCourses();
         }
-        if (triggered) {
-          event.preventDefault();
-          event.stopPropagation();
-          return event.stopImmediatePropagation();
+      });
+      $(document).bind('keydown.ctrl_b', function() {
+        if (hpi.isEditing()) {
+          return hpi.stopEditingCourses();
+        } else {
+          return hpi.editCourses();
         }
-      };
-      _ref = ['keydown'];
-      _results = [];
-      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-        str = _ref[_i];
-        _results.push($(window).on(str, keyHandler));
-      }
-      return _results;
+      });
+      return $(document).bind('keydown.ctrl_k', function() {
+        if (hpi.isEditing()) {
+          return hpi.newCourse();
+        }
+      });
     },
     newCourse: function() {
       var row;

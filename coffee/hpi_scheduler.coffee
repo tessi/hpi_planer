@@ -57,31 +57,15 @@ window.hpi =
     hpi.fillOverview()
 
   initKeyboardShortcuts: ->
-    keyHandler = (event) ->
-      switch event.keyCode
-        when 27 #escapeKey
-          if hpi.isEditing()
-            hpi.stopEditingCourses()
-            triggered = true
-        when 66 # b-Key
-          if not hpi.isEditing()
-            if event.ctrlKey
-              hpi.editCourses()
-              triggered = true
-          else
-            if event.ctrlKey
-              hpi.stopEditingCourses()
-              triggered = true
-        when 75 # k-Key
-          if event.ctrlKey and hpi.isEditing()
-            hpi.newCourse()
-            triggered = true
-      if triggered
-        event.preventDefault()
-        event.stopPropagation()
-        event.stopImmediatePropagation()
-
-    $(window).on str, keyHandler for str in ['keydown']
+    $(document).bind 'keydown.esc', () ->
+      hpi.stopEditingCourses() if hpi.isEditing()
+    $(document).bind 'keydown.ctrl_b', () ->
+      if hpi.isEditing()
+        hpi.stopEditingCourses()
+      else
+        hpi.editCourses()
+    $(document).bind 'keydown.ctrl_k', () ->
+      hpi.newCourse() if hpi.isEditing()
 
   newCourse: ->
     row = hpi.addAnotherRow "hier reinklicken und editieren"

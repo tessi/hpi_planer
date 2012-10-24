@@ -451,12 +451,16 @@
       vt1_data = courses[0][1];
       $("#vt1_lp").text(vt1_data[2]);
       $("#vt1_grade").text((vt1_data[0] ? vt1_data[0].toFixed(2) : ""));
-      $("#vt1_weight").text(courses[0][0]);
+      if (vt1_data[2] > 0) {
+        $("#vt1_weight").text(courses[0][0]);
+      }
       $("#vt1").toggleClass("error", vt1_data[2] < 24);
       vt2_data = hpi.sumupGrades(grades[courses[1][0]], 15, 9);
       $("#vt2_lp").text(vt2_data[2]);
       $("#vt2_grade").text((vt2_data[0] ? vt2_data[0].toFixed(2) : ""));
-      $("#vt2_weight").text(courses[1][0]);
+      if (vt2_data[2] > 0) {
+        $("#vt2_weight").text(courses[1][0]);
+      }
       $("#vt2").toggleClass("error", vt2_data[2] < 15);
       sskma = hpi.getSskLp("ma");
       $("#sskma_lp").text(sskma);

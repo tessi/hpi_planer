@@ -89,21 +89,27 @@
       return hpi.fillOverview();
     },
     initKeyboardShortcuts: function() {
-      $(document).bind('keydown.esc', function() {
+      $(document).bind('keydown.esc', function(evt) {
         if (hpi.isEditing()) {
-          return hpi.stopEditingCourses();
+          hpi.stopEditingCourses();
+          evt.stopPropagation();
+          return false;
         }
       });
-      $(document).bind('keydown.ctrl_b', function() {
+      $(document).bind('keydown.ctrl_b', function(evt) {
         if (hpi.isEditing()) {
-          return hpi.stopEditingCourses();
+          hpi.stopEditingCourses();
         } else {
-          return hpi.editCourses();
+          hpi.editCourses();
         }
+        evt.stopPropagation();
+        return false;
       });
-      return $(document).bind('keydown.ctrl_k', function() {
+      return $(document).bind('keydown.ctrl_k', function(evt) {
         if (hpi.isEditing()) {
-          return hpi.newCourse();
+          hpi.newCourse();
+          evt.stopPropagation();
+          return false;
         }
       });
     },

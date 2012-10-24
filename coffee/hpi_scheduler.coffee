@@ -57,15 +57,23 @@ window.hpi =
     hpi.fillOverview()
 
   initKeyboardShortcuts: ->
-    $(document).bind 'keydown.esc', () ->
-      hpi.stopEditingCourses() if hpi.isEditing()
-    $(document).bind 'keydown.ctrl_b', () ->
+    $(document).bind 'keydown.esc', (evt) ->
+      if hpi.isEditing()
+        hpi.stopEditingCourses()
+        evt.stopPropagation()
+        false
+    $(document).bind 'keydown.ctrl_b', (evt) ->
       if hpi.isEditing()
         hpi.stopEditingCourses()
       else
         hpi.editCourses()
-    $(document).bind 'keydown.ctrl_k', () ->
-      hpi.newCourse() if hpi.isEditing()
+      evt.stopPropagation()
+      false
+    $(document).bind 'keydown.ctrl_k', (evt) ->
+      if hpi.isEditing()
+        hpi.newCourse()
+        evt.stopPropagation()
+        false
 
   newCourse: ->
     row = hpi.addAnotherRow "hier reinklicken und editieren"

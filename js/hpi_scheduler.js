@@ -89,29 +89,48 @@
       return hpi.fillOverview();
     },
     initKeyboardShortcuts: function() {
-      $(document).bind('keydown.esc', function(evt) {
-        if (hpi.isEditing()) {
-          hpi.stopEditingCourses();
-          evt.stopPropagation();
-          return false;
+      var keyHandler, str, _i, _len, _ref, _results;
+      keyHandler = function(event) {
+        var triggered;
+        switch (event.keyCode) {
+          case 27:
+            if (hpi.isEditing()) {
+              hpi.stopEditingCourses();
+              triggered = true;
+            }
+            break;
+          case 66:
+            if (!hpi.isEditing()) {
+              if (event.ctrlKey) {
+                hpi.editCourses();
+                triggered = true;
+              }
+            } else {
+              if (event.ctrlKey) {
+                hpi.stopEditingCourses();
+                triggered = true;
+              }
+            }
+            break;
+          case 75:
+            if (event.ctrlKey && hpi.isEditing()) {
+              hpi.newCourse();
+              triggered = true;
+            }
         }
-      });
-      $(document).bind('keydown.ctrl_b', function(evt) {
-        if (hpi.isEditing()) {
-          hpi.stopEditingCourses();
-        } else {
-          hpi.editCourses();
+        if (triggered) {
+          event.preventDefault();
+          event.stopPropagation();
+          return event.stopImmediatePropagation();
         }
-        evt.stopPropagation();
-        return false;
-      });
-      return $(document).bind('keydown.ctrl_k', function(evt) {
-        if (hpi.isEditing()) {
-          hpi.newCourse();
-          evt.stopPropagation();
-          return false;
-        }
-      });
+      };
+      _ref = ['keydown'];
+      _results = [];
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        str = _ref[_i];
+        _results.push($(window).on(str, keyHandler));
+      }
+      return _results;
     },
     newCourse: function() {
       var row;

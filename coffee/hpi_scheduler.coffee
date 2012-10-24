@@ -380,4 +380,28 @@ window.hpi =
 
   loadFromLocalStorage: ->
     json = JSON.parse(localStorage.getItem("course_data"))
+    json = hpi.example_row_data() if json is null
     hpi.applyJson json  if json
+
+  example_row_data: ->
+    {
+      masterprojectgrade: null,
+      masterthesisgrade: null,
+      rows:[[
+        "Beispielvorlesung",
+        "WS 12/13",
+        "6",
+        {active: true,  selected: true},
+        {active: true,  selected: false},
+        {active: false, selected: false},
+        {active: false, selected: false},
+        {active: false, selected: false},
+        {active: true,  selected: false},
+        {active: false, selected: false},
+        {active: false, selected: false},
+        {active: false, selected: false},
+        {active: false, selected: false},
+        {active: false, selected: false},
+        "2.7"
+        ]]
+    }

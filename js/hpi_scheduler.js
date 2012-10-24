@@ -548,9 +548,56 @@
     loadFromLocalStorage: function() {
       var json;
       json = JSON.parse(localStorage.getItem("course_data"));
+      if (json === null) {
+        json = hpi.example_row_data();
+      }
       if (json) {
         return hpi.applyJson(json);
       }
+    },
+    example_row_data: function() {
+      return {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows: [
+          [
+            "Beispielvorlesung", "WS 12/13", "6", {
+              active: true,
+              selected: true
+            }, {
+              active: true,
+              selected: false
+            }, {
+              active: false,
+              selected: false
+            }, {
+              active: false,
+              selected: false
+            }, {
+              active: false,
+              selected: false
+            }, {
+              active: true,
+              selected: false
+            }, {
+              active: false,
+              selected: false
+            }, {
+              active: false,
+              selected: false
+            }, {
+              active: false,
+              selected: false
+            }, {
+              active: false,
+              selected: false
+            }, {
+              active: false,
+              selected: false
+            }, "2.7"
+          ]
+        ]
+      };
     }
   };
 

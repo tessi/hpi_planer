@@ -3,6 +3,9 @@
 
   window.hpi = {
     init: function() {
+      $("#btn-close-info-window").click(function() {
+        return hpi.closeKeyboardShortcutInfo();
+      });
       $("#btn-edit-start").click(function() {
         return hpi.editCourses();
       });
@@ -97,6 +100,9 @@
             if (hpi.isEditing()) {
               hpi.stopEditingCourses();
               triggered = true;
+            } else if ($('#keyboardShortcutInfo').is(':visible')) {
+              hpi.closeKeyboardShortcutInfo();
+              triggered = true;
             }
             break;
           case 66:
@@ -117,6 +123,16 @@
               hpi.newCourse();
               triggered = true;
             }
+            break;
+          case 191:
+            if ($('#keyboardShortcutInfo').is(':visible')) {
+              hpi.closeKeyboardShortcutInfo();
+            } else {
+              hpi.showKeyboardShortcutInfo();
+            }
+            break;
+          default:
+            console.log(event);
         }
         if (triggered) {
           event.preventDefault();
@@ -598,6 +614,12 @@
           ]
         ]
       };
+    },
+    showKeyboardShortcutInfo: function() {
+      return $('#keyboardShortcutInfo').show();
+    },
+    closeKeyboardShortcutInfo: function() {
+      return $('#keyboardShortcutInfo').hide();
     }
   };
 

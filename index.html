@@ -43,10 +43,38 @@
     span.shortcutKey {
       border-bottom: 1px solid black;
     }
+    #keyboardShortcutInfo {
+      width: 400px;
+      position: fixed;
+      background-color: cornsilk;
+      border: 1px solid gray;
+      z-index: 4242;
+      top: 5em;
+      left: 50%;
+      margin-left: -200px;
+      padding: 1em;
+    }
   </style>
 </head>
 
 <body>
+  <div id="keyboardShortcutInfo" style="display: none">
+    <h2>Es gibt Shortcuts!</h2>
+    <p><ul>
+      <li><code>ctrl-b</code>: Bearbeiten-Modes (de-)aktivieren</li>
+      <li><code>ctrl-k</code>: Lege einen neuen Kurs im Bearbeiten-Modus an</li>
+      <li><code>esc</code>:    Beende den Bearbeiten-Modus</li>
+    </ul></p>
+    <p style="text-align: right">
+      <a id="btn-close-info-window" class="btn btn-small btn-success" title="Info-Fenster schließen">
+        <i class="icon-ok"></i>
+        Hab's verstanden!
+      </a>
+    <a id="btn-edit-confirm" class="table-head-controls btn btn-success hidden" title="Alle Änderungen werden übernommen.">
+            <i class="icon-ok"></i>
+            Ich <span class="shortcutKey">b</span>in fertig mit Eintragen!
+          </a></p>
+  </div>
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">

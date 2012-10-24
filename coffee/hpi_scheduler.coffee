@@ -1,5 +1,7 @@
 window.hpi =
   init: ->
+    $("#btn-close-info-window").click ->
+      hpi.closeKeyboardShortcutInfo()
     $("#btn-edit-start").click ->
       hpi.editCourses()
     $("#btn-edit-confirm").click ->
@@ -63,6 +65,9 @@ window.hpi =
           if hpi.isEditing()
             hpi.stopEditingCourses()
             triggered = true
+          else if $('#keyboardShortcutInfo').is(':visible')
+            hpi.closeKeyboardShortcutInfo()
+            triggered = true
         when 66 # b-Key
           if not hpi.isEditing()
             if event.ctrlKey
@@ -76,6 +81,13 @@ window.hpi =
           if event.ctrlKey and hpi.isEditing()
             hpi.newCourse()
             triggered = true
+        when 191 # ?-Key
+          if $('#keyboardShortcutInfo').is(':visible')
+            hpi.closeKeyboardShortcutInfo()
+          else
+            hpi.showKeyboardShortcutInfo()
+        else
+          console.log event
       if triggered
         event.preventDefault()
         event.stopPropagation()
@@ -405,3 +417,10 @@ window.hpi =
         "2.7"
         ]]
     }
+
+  showKeyboardShortcutInfo: ->
+
+    $('#keyboardShortcutInfo').show()
+
+  closeKeyboardShortcutInfo: ->
+    $('#keyboardShortcutInfo').hide()

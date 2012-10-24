@@ -110,7 +110,7 @@ window.hpi =
     hpi.replaceRadioButtonsWithCheckboxes()
     # put cursor in first cell of the table
     cell = $ '#grades td:first'
-    if not cell.empty()
+    if cell.children().length > 0
       range = document.createRange()
       if cell[0].childNodes[0].TEXT_NODE isnt cell[0].childNodes[0].nodeType
         hpi.selectContentOf cell

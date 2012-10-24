@@ -176,7 +176,7 @@
       hpi.enableEditingContent();
       hpi.replaceRadioButtonsWithCheckboxes();
       cell = $('#grades td:first');
-      if (!cell.empty()) {
+      if (cell.children().length > 0) {
         range = document.createRange();
         if (cell[0].childNodes[0].TEXT_NODE !== cell[0].childNodes[0].nodeType) {
           hpi.selectContentOf(cell);

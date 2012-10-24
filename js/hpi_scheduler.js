@@ -163,15 +163,17 @@
       hpi.enableEditingContent();
       hpi.replaceRadioButtonsWithCheckboxes();
       cell = $('#grades td:first');
-      range = document.createRange();
-      if (cell[0].childNodes[0].TEXT_NODE !== cell[0].childNodes[0].nodeType) {
-        hpi.selectContentOf(cell);
+      if (!cell.empty()) {
+        range = document.createRange();
+        if (cell[0].childNodes[0].TEXT_NODE !== cell[0].childNodes[0].nodeType) {
+          hpi.selectContentOf(cell);
+        }
+        range.setStartBefore(cell[0].childNodes[0]);
+        range.setEndBefore(cell[0].childNodes[0]);
+        sel = window.getSelection();
+        sel.removeAllRanges();
+        return sel.addRange(range);
       }
-      range.setStartBefore(cell[0].childNodes[0]);
-      range.setEndBefore(cell[0].childNodes[0]);
-      sel = window.getSelection();
-      sel.removeAllRanges();
-      return sel.addRange(range);
     },
     stopEditingCourses: function() {
       var element, _i, _len, _ref;
@@ -219,9 +221,15 @@
       return row;
     },
     selectContentOf: function(el) {
-      var range, sel;
+      var content, range, sel;
       range = document.createRange();
-      range.selectNode(el[0].childNodes[0]);
+      content = el[0].childNodes[0];
+      if (content) {
+        range.selectNode(content);
+      } else {
+        range.setStart(el[0]);
+        range.setEnd(el[0]);
+      }
       sel = window.getSelection();
       sel.removeAllRanges();
       return sel.addRange(range);

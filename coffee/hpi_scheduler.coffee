@@ -86,8 +86,6 @@ window.hpi =
             hpi.closeKeyboardShortcutInfo()
           else
             hpi.showKeyboardShortcutInfo()
-        else
-          console.log event
       if triggered
         event.preventDefault()
         event.stopPropagation()

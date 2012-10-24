@@ -130,9 +130,6 @@
             } else {
               hpi.showKeyboardShortcutInfo();
             }
-            break;
-          default:
-            console.log(event);
         }
         if (triggered) {
           event.preventDefault();

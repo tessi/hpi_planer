@@ -309,12 +309,14 @@ window.hpi =
     vt1_data = courses[0][1]
     $("#vt1_lp").text vt1_data[2]
     $("#vt1_grade").text (if vt1_data[0] then vt1_data[0].toFixed(2) else "")
-    $("#vt1_weight").text courses[0][0] if vt1_data[2] > 0 # display text only if a course is listed in this vt
+    # display text only if a course is listed in this vt
+    $("#vt1_weight").text if vt1_data[2] > 0 then courses[0][0] else ''
     $("#vt1").toggleClass "error", vt1_data[2] < 24
     vt2_data = hpi.sumupGrades(grades[courses[1][0]], 15, 9)
     $("#vt2_lp").text vt2_data[2]
     $("#vt2_grade").text (if vt2_data[0] then vt2_data[0].toFixed(2) else "")
-    $("#vt2_weight").text courses[1][0] if vt2_data[2] > 0 # display text only if a course is listed in this vt
+    # display text only if a course is listed in this vt
+    $("#vt2_weight").text if vt2_data[2] > 0 then courses[1][0] else ''
     $("#vt2").toggleClass "error", vt2_data[2] < 15
     sskma = hpi.getSskLp("ma")
     $("#sskma_lp").text sskma

@@ -301,6 +301,7 @@ window.hpi =
     $("#itse").toggleClass "error", itse_data[2] < 24
     courses = _.map ['samt', 'osis', 'ist', 'hct', 'bpet'], (vt) ->
       [vt, hpi.sumupGrades(grades[vt], 24, 18)]
+    # sort vt's by their lp-sum (vt with most lp ist vt1, seconds will be vt2)
     courses.sort (a, b) ->
       return -1  if a[1][2] > b[1][2]
       return 1  if a[1][2] < b[1][2]

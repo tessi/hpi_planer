@@ -25,7 +25,7 @@
           type: "application/octet-stream"
         });
         button = $(this);
-        button.attr("href", URL.createObjectURL(blob));
+        button.attr("href", (window.URL || window.webkitURL).createObjectURL(blob));
         return button.attr("download", "hpi_masterplan.json");
       });
       $("#restore_data").click(function() {

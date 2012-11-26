@@ -108,4 +108,53 @@
     });
   });
 
+  describe("HPI Planer UI", function() {
+    it("hides the edit-button when entering edit-mode", function() {
+      var editButton;
+      editButton = jQuery('<div/>', {
+        id: 'btn-edit-start',
+        style: 'position: fixed; left: -100em;'
+      }).appendTo('body');
+      expect(editButton.is('.hidden')).toBe(false);
+      hpi.showEditButtons(true);
+      expect(editButton.is('.hidden')).toBe(true);
+      return editButton.remove();
+    });
+    it("shows the edit-button again when leaving edit-mode", function() {
+      var editButton;
+      editButton = jQuery('<div/>', {
+        id: 'btn-edit-start',
+        style: 'position: fixed; left: -100em;',
+        "class": 'hidden'
+      }).appendTo('body');
+      expect(editButton.is('.hidden')).toBe(true);
+      hpi.showEditButtons(false);
+      expect(editButton.is('.hidden')).toBe(false);
+      return editButton.remove();
+    });
+    it("shows the confirm-edit-button when entering edit-mode", function() {
+      var confirmEditButton;
+      confirmEditButton = jQuery('<div/>', {
+        id: 'btn-edit-confirm',
+        style: 'position: fixed; left: -100em;',
+        "class": 'hidden'
+      }).appendTo('body');
+      expect(confirmEditButton.is('.hidden')).toBe(true);
+      hpi.showEditButtons(true);
+      expect(confirmEditButton.is('.hidden')).toBe(false);
+      return confirmEditButton.remove();
+    });
+    return it("hides the confirm-edit-button again when leaving edit-mode", function() {
+      var confirmEditButton;
+      confirmEditButton = jQuery('<div/>', {
+        id: 'btn-edit-confirm',
+        style: 'position: fixed; left: -100em;'
+      }).appendTo('body');
+      expect(confirmEditButton.is('.hidden')).toBe(false);
+      hpi.showEditButtons(false);
+      expect(confirmEditButton.is('.hidden')).toBe(true);
+      return confirmEditButton.remove();
+    });
+  });
+
 }).call(this);

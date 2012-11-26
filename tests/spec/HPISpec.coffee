@@ -89,3 +89,46 @@ describe "HPI Grade Calculation", ->
     expect(ret[0]).toBeNaN()
     expect(ret[1]).toEqual 0
     expect(ret[2]).toEqual 0
+
+describe "HPI Planer UI", ->
+  it "hides the edit-button when entering edit-mode", ->
+    editButton = jQuery('<div/>', {
+      id: 'btn-edit-start',
+      style: 'position: fixed; left: -100em;',
+    }).appendTo('body');
+    expect(editButton.is '.hidden').toBe false
+    hpi.showEditButtons true
+    expect(editButton.is '.hidden').toBe true
+    editButton.remove()
+
+  it "shows the edit-button again when leaving edit-mode", ->
+    editButton = jQuery('<div/>', {
+      id: 'btn-edit-start',
+      style: 'position: fixed; left: -100em;',
+      class: 'hidden'
+    }).appendTo('body');
+    expect(editButton.is '.hidden').toBe true
+    hpi.showEditButtons false
+    expect(editButton.is '.hidden').toBe false
+    editButton.remove()
+
+  it "shows the confirm-edit-button when entering edit-mode", ->
+    confirmEditButton = jQuery('<div/>', {
+      id: 'btn-edit-confirm',
+      style: 'position: fixed; left: -100em;',
+      class: 'hidden'
+    }).appendTo('body');
+    expect(confirmEditButton.is '.hidden').toBe true
+    hpi.showEditButtons true
+    expect(confirmEditButton.is '.hidden').toBe false
+    confirmEditButton.remove()
+
+  it "hides the confirm-edit-button again when leaving edit-mode", ->
+    confirmEditButton = jQuery('<div/>', {
+      id: 'btn-edit-confirm',
+      style: 'position: fixed; left: -100em;',
+    }).appendTo('body');
+    expect(confirmEditButton.is '.hidden').toBe false
+    hpi.showEditButtons false
+    expect(confirmEditButton.is '.hidden').toBe true
+    confirmEditButton.remove()

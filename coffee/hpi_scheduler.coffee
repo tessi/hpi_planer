@@ -14,7 +14,7 @@ window.hpi =
     $("#download_data").click ->
       blob = new Blob([JSON.stringify(hpi.extractJson())], type: "application/octet-stream" )
       button = $(this)
-      button.attr "href", URL.createObjectURL(blob)
+      button.attr "href", (window.URL || window.webkitURL).createObjectURL(blob)
       button.attr "download", "hpi_masterplan.json"
     $("#restore_data").click ->
       button = $(this)

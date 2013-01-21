@@ -98,7 +98,7 @@ window.hpi =
     hpi.selectContentOf row.children("td:first-child")
 
   showEditButtons: (mode) -> # true->default, false
-    mode = true  if mode isnt false
+    mode = true if mode isnt false
     $("#btn-edit-start").toggleClass "hidden", mode
     btn.toggleClass "hidden", not mode for btn in [$("#btn-edit-confirm"), $("#btn-add-row")]
 

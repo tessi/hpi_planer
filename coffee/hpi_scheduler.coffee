@@ -29,7 +29,14 @@ window.hpi =
           hpi.applyJson json
           hpi.saveToLocalStorage()
       reader.readAsText file
+    $("#course-select").change ->
+      index = parseInt($(this).val(), 10)
+      course = window.courses[index]
+      hpi.applyJson course, false
+      hpi.removeRemoveRowButtons()
+      hpi.addRemoveRowButtons()
     hpi.initKeyboardShortcuts()
+    hpi.loadCourses()
 
     hpi.editables = [$("#grades > tbody"), $("#masterproject_grade"), $("#masterthesis_grade")]
 
@@ -138,6 +145,10 @@ window.hpi =
     $.each $("#grades td input"), (idx, element) ->
       $(element).parent('td').attr "contentEditable", off
     $("#grades td .row_remove_button").attr "contentEditable", off
+    if mode
+      $("#course-list").show()
+    else
+      $("#course-list").hide()
 
   addRemoveRowButtons: ->
     button = $("<a class=\"btn btn-mini row_remove_button\" style=\"float:right;\" title=\"Kurs löschen\"><i class=\"icon-remove\"></i></a>")
@@ -368,12 +379,13 @@ window.hpi =
       json.rows.push tmp
     json
 
-  applyJson: (json) ->
+  applyJson: (json, clear=true) ->
     $("#masterproject_grade").text json.masterprojectgrade.toFixed(1) if json.masterprojectgrade
     $("#masterthesis_grade").text  json.masterthesisgrade.toFixed(1)  if json.masterthesisgrade
     # delete all existing courses
-    $("#grades > tbody tr").each (row_idx, row) ->
-      $(row).remove()
+    if clear
+      $("#grades > tbody tr").each (row_idx, row) ->
+        $(row).remove()
     # add rows from json
     if json.rows
       i = json.rows.length - 1
@@ -425,3 +437,13 @@ window.hpi =
 
   closeKeyboardShortcutInfo: ->
     $('#keyboardShortcutInfo').hide()
+
+  loadCourses: ->
+    select = $("#course-select")
+    current_term = null
+    for course, index in window.courses
+      course_term = course.rows[0][1]
+      if course_term != current_term
+        select.append("<option disabled='disabled'>#{course_term}</option>")
+        current_term = course_term
+      select.append("<option value='#{index}'>- #{course.rows[0][0]} - #{course.rows[0][2]} Pkt</option>")

@@ -48,7 +48,16 @@
         };
         return reader.readAsText(file);
       });
+      $("#course-select").change(function() {
+        var course, index;
+        index = parseInt($(this).val(), 10);
+        course = window.courses[index];
+        hpi.applyJson(course, false);
+        hpi.removeRemoveRowButtons();
+        return hpi.addRemoveRowButtons();
+      });
       hpi.initKeyboardShortcuts();
+      hpi.loadCourses();
       hpi.editables = [$("#grades > tbody"), $("#masterproject_grade"), $("#masterthesis_grade")];
       $('#grades').on('click', '.editing td', function(event) {
         var checkbox, target;
@@ -214,7 +223,12 @@
       $.each($("#grades td input"), function(idx, element) {
         return $(element).parent('td').attr("contentEditable", false);
       });
-      return $("#grades td .row_remove_button").attr("contentEditable", false);
+      $("#grades td .row_remove_button").attr("contentEditable", false);
+      if (mode) {
+        return $("#course-list").show();
+      } else {
+        return $("#course-list").hide();
+      }
     },
     addRemoveRowButtons: function() {
       var button;
@@ -517,17 +531,22 @@
       });
       return json;
     },
-    applyJson: function(json) {
+    applyJson: function(json, clear) {
       var i, j, row_elem, _i, _len, _ref;
+      if (clear == null) {
+        clear = true;
+      }
       if (json.masterprojectgrade) {
         $("#masterproject_grade").text(json.masterprojectgrade.toFixed(1));
       }
       if (json.masterthesisgrade) {
         $("#masterthesis_grade").text(json.masterthesisgrade.toFixed(1));
       }
-      $("#grades > tbody tr").each(function(row_idx, row) {
-        return $(row).remove();
-      });
+      if (clear) {
+        $("#grades > tbody tr").each(function(row_idx, row) {
+          return $(row).remove();
+        });
+      }
       if (json.rows) {
         i = json.rows.length - 1;
         while (i >= 0) {
@@ -617,6 +636,23 @@
     },
     closeKeyboardShortcutInfo: function() {
       return $('#keyboardShortcutInfo').hide();
+    },
+    loadCourses: function() {
+      var course, course_term, current_term, index, select, _i, _len, _ref, _results;
+      select = $("#course-select");
+      current_term = null;
+      _ref = window.courses;
+      _results = [];
+      for (index = _i = 0, _len = _ref.length; _i < _len; index = ++_i) {
+        course = _ref[index];
+        course_term = course.rows[0][1];
+        if (course_term !== current_term) {
+          select.append("<option disabled='disabled'>" + course_term + "</option>");
+          current_term = course_term;
+        }
+        _results.push(select.append("<option value='" + index + "'>- " + course.rows[0][0] + " - " + course.rows[0][2] + " Pkt</option>"));
+      }
+      return _results;
     }
   };
 

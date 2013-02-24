@@ -230,9 +230,13 @@
                 Kurs<br />
                 <a id="btn-add-row" class="btn btn-success btn-small hidden" style="position: relative; bottom: -12px;">
                   <i class="icon-plus"></i>
-                  neuer <span class="shortcutKey">K</span>urs
+                  benutzerdefinierter <span class="shortcutKey">K</span>urs
                 </a>
               </th>
+              <div id="course-list" style="display:none; margin-bottom: 20px;">
+                <b>Auswahl: </b><br>
+                <select id="course-select" class="input-xlarge"></select>
+              </div>
               <th rowspan="2" style="min-width: 5em;">Semester</th>
               <th rowspan="2" style="min-width: 3em;">LP</th>
               <th colspan="11">Gewähltes Vertiefungsgebiet</th>
@@ -263,6 +267,7 @@
   <script src="js/jquery.tablesorter.min.js"></script>
   <script src="js/underscore-min.js"></script>
   <script src="js/hpi_scheduler.js"></script>
+  <script src="js/courses.js"></script>
   <script type="text/javascript">
     hpi.init();
     hpi.fillOverview();

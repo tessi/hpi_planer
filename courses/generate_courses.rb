@@ -28,7 +28,7 @@ def parse_single_course(c)
   points = points_str ? points_str[-1] : 0
 
   # type
-  td = html.css('td:first').find{|td| td.content.include?("Lehrform:")}
+  td = html.css('td.tx-jshuniversity-pi1-singleView-HCell').find{|td| td.content.include?("Lehrform:")}
   type_td = td.parent.css('td:last').first
   arr = []
   arr << ['V'] if type_td.content =~ /Vorlesung/
@@ -38,7 +38,7 @@ def parse_single_course(c)
   type = arr.join('/')
 
   # modules
-  td = html.css('td:first').find{|td| td.content.include?("Kennung:")}
+  td = html.css('td.tx-jshuniversity-pi1-singleView-HCell').find{|td| td.content.include?("Kennung:")}
   modules_td = td.parent.css('td:last').first
   modules = $all_modules.select{|m| modules_td.content.include?(m)}
 
@@ -57,12 +57,14 @@ def parse_courses(term, uri)
   end
 end
 
-ws1213 = parse_courses('WS 12/13', '/studium/lehrangebot/itse.html')
+ws1314 = parse_courses('WS 13/14', '/studium/lehrangebot/itse.html')
+ss13 = parse_courses('SS 13', '/studium/lehrangebot/lehrangebotsarchiv/lehrangebotsarchiv_ss_2013.html')
+ws1213 = parse_courses('WS 12/13', '/studium/lehrangebot/lehrangebotsarchiv/lehrangebotsarchiv_ws_1213.html')
 ss12 = parse_courses('SS 12', '/studium/lehrangebot/lehrangebotsarchiv/lehrangebotsarchiv_ss_2012.html')
 ws1112 = parse_courses('WS 11/12', '/studium/lehrangebot/lehrangebotsarchiv/lehrangebotsarchiv_ws_1112.html')
 ss11 = parse_courses('SS 11', '/studium/lehrangebot/lehrangebotsarchiv/lehrangebotsarchiv_ss_2011.html')
 ws1011 = parse_courses('WS 10/11', '/studium/lehrangebot/lehrangebotsarchiv/lehrangebotsarchiv_ws_1011.html')
-courses = [ws1213, ss12, ws1112, ss11, ws1011].flatten
+courses = [ws1314,ss13,ws1213, ss12, ws1112, ss11, ws1011].flatten
 
 # generate js file
 template = ERB.new <<-EOF

@@ -4,8 +4,76 @@
         masterprojectgrade: null,
         masterthesisgrade: null,
         rows:[[
+          "A Platform for Complex Event Processing (S)",
+          "WS 13/14",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Advanced Data Profiling (P/S)",
+          "WS 13/14",
+          "0",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
           "Advanced Design Thinking (D-School Advanced Track) (P/S)",
-          "WS 12/13",
+          "WS 13/14",
           "6",
           
             {active: false, selected: false},
@@ -38,8 +106,76 @@
         masterprojectgrade: null,
         masterthesisgrade: null,
         rows:[[
+          "Automated Analysis of Formal Models (S)",
+          "WS 13/14",
+          "3",
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Bring your own project: IT-Projekte erfolgreich planen und managen (S)",
+          "WS 13/14",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
           "Business Etikette - HPI Charm School (S)",
-          "WS 12/13",
+          "WS 13/14",
           "3",
           
             {active: false, selected: false},
@@ -63,6 +199,2590 @@
             {active: false, selected: false},
           
             {active: true, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Business Process Compliance (V)",
+          "WS 13/14",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Data Mining and Probabilistic Reasoning (V)",
+          "WS 13/14",
+          "6",
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Design Thinking Basics (D-School Basic Track) (P/S)",
+          "WS 13/14",
+          "0",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Eingebettete Betriebssysteme (V/P)",
+          "WS 13/14",
+          "6",
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Fachspezifisches Englisch (Level 3) (S)",
+          "WS 13/14",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Global Team-Based Product Innovation & Engineering I - ME 310 (P/S)",
+          "WS 13/14",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Global Team-Based Product Innovation & Engineering III - ME 310 Coaching Research (P/S)",
+          "WS 13/14",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "HCI Project Seminar on Interactive Fabrication and Muscle Interfaces (P/S)",
+          "WS 13/14",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "In-Memory Data Management Research (S)",
+          "WS 13/14",
+          "6",
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Introduction of Design Thinking (Einführung in das Design Thinking) (P/S)",
+          "WS 13/14",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "IT-Entrepreneurship (S)",
+          "WS 13/14",
+          "6",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "IT-Fallstudien - Was wir aus gescheiterten IT-Projekten lernen können (V)",
+          "WS 13/14",
+          "6",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "IT-Recht (V)",
+          "WS 13/14",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Konflikt- und Kommunikationsmanagement (S)",
+          "WS 13/14",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Konzepte paralleler Programmierung (V)",
+          "WS 13/14",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Methodik der Geoinformationstechnik (V)",
+          "WS 13/14",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Network Security in Practice (S)",
+          "WS 13/14",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Pearls of Computer Science (S)",
+          "WS 13/14",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Personal Management Skills (S)",
+          "WS 13/14",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Persönlichkeit und Selbstmanagement (S)",
+          "WS 13/14",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Privacy and Security in IPv6 (P/S)",
+          "WS 13/14",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Semantic Web Technologien (V)",
+          "WS 13/14",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Seminar des Forschungskollegs (S)",
+          "WS 13/14",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Seminar Geovisualisierung (P/S)",
+          "WS 13/14",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Sicherheit in komplexen IT-Landschaften (S)",
+          "WS 13/14",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Social Media Analyses (P/S)",
+          "WS 13/14",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Software Analytics (S)",
+          "WS 13/14",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Software Engineering for Embedded Systems (V/P)",
+          "WS 13/14",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Statistische Datenanalyse (V)",
+          "WS 13/14",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Trends und Konzepte in der Softwareindustrie II - Next Generation Clinical Information Systems (V)",
+          "WS 13/14",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Überzeugend präsentieren - Noch besser auftreten! (Fortgeschrittene) (S)",
+          "WS 13/14",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Virtuelle Maschinen und Ausführungsumgebungen (P/S)",
+          "WS 13/14",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Advanced Design Thinking (D-School Advanced Track) (P/S)",
+          "SS 13",
+          "6",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Advanced MDE: Model Management (P/S)",
+          "SS 13",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Advanced Recommendation Techniques (P/S)",
+          "SS 13",
+          "6",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Algorithmen und Analysemethoden für Sicherheit in Cloud-Infrastrukturen (S)",
+          "SS 13",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Algorithmen und Techniken der Geovisualisierung (ehem.: Geovisualisierungsverfahren) (P/S)",
+          "SS 13",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Automated Analysis of Formal Models (S)",
+          "SS 13",
+          "3",
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Bring your own project: IT-Projekte erfolgreich planen und managen (S)",
+          "SS 13",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Business Etikette - HPI Charm School (S)",
+          "SS 13",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Cloud und Virtualisierung (S)",
+          "SS 13",
+          "3",
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Data Profiling and Data Cleansing (V)",
+          "SS 13",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Dependable Systems (V)",
+          "SS 13",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Design Thinking Basics (D-School Basic Track) (P/S)",
+          "SS 13",
+          "0",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Designing and Programming Applications for In-Memory Databases (P/S)",
+          "SS 13",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Event Processing Technologies (S)",
+          "SS 13",
+          "6",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Fachspezifisches Englisch (Level 3) (S)",
+          "SS 13",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Führungskompetenz (S)",
+          "SS 13",
+          "6",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Geovisualisierung (V)",
+          "SS 13",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Global Team-Based Product Innovation & Engineering II - ME 310 (P/S)",
+          "SS 13",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "HCI Project Seminar on Cameras, Haptics & Interactive Fabrication (P/S)",
+          "SS 13",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Human Computer Interaction Research (V)",
+          "SS 13",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "In-Memory Databases: Algorithms and Data Structures on Modern Hardware (S)",
+          "SS 13",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Informationssicherheit (V)",
+          "SS 13",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Interactive Representations of Data Structures and Algorithms (S)",
+          "SS 13",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Introduction of Design Thinking (Einführung in das Design Thinking) (P/S)",
+          "SS 13",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "IT Entrepreneurship II (S)",
+          "SS 13",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Konflikt- und Kommunikationsmanagement (S)",
+          "SS 13",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Large Scale Duplicate Detection (S)",
+          "SS 13",
+          "6",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Management Essentials (V)",
+          "SS 13",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Penetration Testing and Securing IPv6 Networks (P/S)",
+          "SS 13",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Personal Leadership Skills (S)",
+          "SS 13",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Persönlichkeit und Selbstmanagement (S)",
+          "SS 13",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Schnittstellen der Geoinformation und Geokommunikation (V)",
+          "SS 13",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Semantic Multimedia (S)",
+          "SS 13",
+          "6",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Seminar des Forschungskollegs (S)",
+          "SS 13",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Software Adaption (V/P)",
+          "SS 13",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Software Profiling (S)",
+          "SS 13",
+          "3",
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Software-as-a-Service and Multi-tenancy (S)",
+          "SS 13",
+          "3",
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Softwarevisualisierungsverfahren (S)",
+          "SS 13",
+          "6",
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "StudiumPlus",
+          "SS 13",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Systemtechnische Grundlagen der Regelungs- und Steuerungstechnik (V)",
+          "SS 13",
+          "6",
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Trends and Concepts in the Software Industry I: Inner Mechanics of In-Memory Databases (V)",
+          "SS 13",
+          "3",
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Überzeugend präsentieren - Noch besser auftreten! (Fortgeschrittene) (S)",
+          "SS 13",
+          "3",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Unternehmensgründung im IT-Sektor (V)",
+          "SS 13",
+          "6",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+          "2.7"
+        ]]
+      },
+    
+      {
+        masterprojectgrade: null,
+        masterthesisgrade: null,
+        rows:[[
+          "Advanced Design Thinking (D-School Advanced Track) (P/S)",
+          "WS 12/13",
+          "6",
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: true, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
+          
+            {active: false, selected: false},
           
           "2.7"
         ]]
@@ -1602,40 +4322,6 @@
         masterprojectgrade: null,
         masterthesisgrade: null,
         rows:[[
-          "Führungskompetenz (S)",
-          "SS 12",
-          "6",
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: true, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-          "2.7"
-        ]]
-      },
-    
-      {
-        masterprojectgrade: null,
-        masterthesisgrade: null,
-        rows:[[
           "Global Team-Based Product Innovation & Engineering (P/S)",
           "SS 12",
           "6",
@@ -2078,40 +4764,6 @@
         masterprojectgrade: null,
         masterthesisgrade: null,
         rows:[[
-          "Personal Leadership Skills (S)",
-          "SS 12",
-          "3",
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: true, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-          "2.7"
-        ]]
-      },
-    
-      {
-        masterprojectgrade: null,
-        masterthesisgrade: null,
-        rows:[[
           "Persönlichkeit und Selbstmanagement (S)",
           "SS 12",
           "3",
@@ -2327,40 +4979,6 @@
             {active: false, selected: false},
           
             {active: true, selected: false},
-          
-            {active: true, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-          "2.7"
-        ]]
-      },
-    
-      {
-        masterprojectgrade: null,
-        masterthesisgrade: null,
-        rows:[[
-          "Seminar Softwareanalyseverfahren (P/S)",
-          "SS 12",
-          "6",
-          
-            {active: true, selected: false},
-          
-            {active: true, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
           
             {active: true, selected: false},
           
@@ -2737,40 +5355,6 @@
             {active: false, selected: false},
           
             {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: false, selected: false},
-          
-          "2.7"
-        ]]
-      },
-    
-      {
-        masterprojectgrade: null,
-        masterthesisgrade: null,
-        rows:[[
-          "Automatische Software-Analyse (S)",
-          "WS 11/12",
-          "0",
-          
-            {active: false, selected: false},
-          
-            {active: true, selected: false},
-          
-            {active: true, selected: false},
-          
-            {active: false, selected: false},
-          
-            {active: true, selected: false},
           
             {active: false, selected: false},
           
